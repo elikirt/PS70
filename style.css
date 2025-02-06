@@ -18,7 +18,7 @@ a {
 }
 
 .container-fluid {
-  padding: 0px;
+  padding: 10px;
   /*padding-bottom: 70px;*/
 }
 
@@ -85,7 +85,7 @@ nav {
 
 .center-row {
   display: flex;
-  justify-content: center;
+  justify-content: right;
 }
 
 code {
@@ -103,4 +103,26 @@ code {
 
 #aboutme {
   padding: 20px;
+}
+
+.link-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+}
+
+.link-container a {
+  display: inline-block;
+  transform: rotate(-15deg);
+  margin: 10px 0;
+  position: relative;
+  left: calc(7.5% * var(--index)); /* Diagonal effect */
+  text-decoration: none;
+  transition: transform 0.3s, font-size 0.3s; /* Smooth transition */
+}
+
+.link-container a:hover {
+  font-size: calc(100% + 5px); /* Increase font size by 5px */
+  transform: rotate(-10deg); /* Change angle on hover */
 }
