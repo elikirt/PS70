@@ -1,10 +1,22 @@
 body {
+    background: linear-gradient(to bottom, white, rgb(131, 203, 255));
     font: 20px "Gill Sans", Verdana, sans-serif;
     line-height: 1.8;
     color: #000000;
-    background-color: #dcdcdc;
+    background-color: rgb(97, 135, 202);
     padding-top: 0px !important;
   }
+
+.navbar, .footer {
+    background: transparent;
+}
+
+.footer {
+    margin-top: auto;
+    text-align: center;
+    padding: 40px;
+    background: transparent;
+}
 
 .textcontainer {
   padding: 2% 10%;;
@@ -23,8 +35,6 @@ a {
 }
 
 nav {
-  background-color: #dcdcdc;
-  color: #EEE7E8;
   padding: 50px 0px;
 }
 
@@ -32,6 +42,7 @@ nav {
   display: flex;
   justify-content: flex-start;
   gap: 30px;
+  background: transparent;
 }
 
 .nav-title{
@@ -41,20 +52,18 @@ nav {
 }
 
 .nav-link {
-  border: 3px outset #a3a3a3;
   border-radius: 20px;
   padding: 10px 30px;
-  background-color: #a3a3a3;
+  background-color: #000000;
   color: #EEE7E8;
   transition: 0.3s;
 }
 
 .nav-link:hover {
-  border: 3px outset #FFFFFF;
   border-radius: 20px;
   padding: 10px 30px;
-  background-color: #a3a3a3;
-  transition: 0.3s;
+  background-color: #ffffff;
+  transition: 0.2s;
 }
 
 #btn {
@@ -117,12 +126,11 @@ code {
   transform: rotate(-15deg);
   margin: 10px 0;
   position: relative;
-  left: calc(7.5% * var(--index)); /* Diagonal effect */
   text-decoration: none;
   transition: transform 0.3s, font-size 0.3s; /* Smooth transition */
 }
 
 .link-container a:hover {
-  font-size: calc(100% + 5px); /* Increase font size by 5px */
+  font-size: calc(100% + 15px); /* Increase font size by 5px */
   transform: rotate(-10deg); /* Change angle on hover */
 }

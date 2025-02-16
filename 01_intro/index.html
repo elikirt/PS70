@@ -1,58 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<title>PS70: Intro to Digital Fabrication </title>
+<title>PS70</title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
-<link href="../style.css" rel="stylesheet">
+  <link href="../style.css" rel="stylesheet">
 
-<nav class="navbar navbar-expand-sm navbar-dark" style=" color: #EEE7E8;">
-  <div style="align-items: center; justify-content: center;" class="container-fluid">
-    <div class="flexrow">
-      <h2 class="nav-title">PS70 Spring 2025</h2>
-    </div>
-    <div class="navbar-nav">
-      <h4><a class="nav-link" href="../index.html">Home</a></h4>
+<nav class="navbar navbar-expand-sm navbar-dark">
+  <div class="container-fluid d-flex justify-content-center">
+    <h4><a class="nav-link" href="../index.html">PS 70</a></h4>
+    <div class="ms-auto position-absolute" style="right: 30px;">
       <h4><a class="nav-link" href="../about.html">About</a></h4>
     </div>
   </div>
 </nav>
 
 <body>
-<xmp style="display:none;">
-<div class="textcontainer">
-<br></br>
+  <xmp style="display:none;">
+  <div class="textcontainer">
 
-<h3 align="center"><b>I >> Intro</b></h3>
-<p class="margin"></p>
-Here are a couple cool ideas for my final project...
-<p class="margin"></p>
+  <h2 align="center"><b><u>Week 1 >> Intro (Project Ideas)</u></b></h2>
+  <p class="margin"></p>
+  Here are a couple cool ideas for my final project...
+  <p class="margin"></p>
 
-<div class="row">
-  <div class="col-sm-4">
-    <h4>Idea 1: Walking Table</h4>
-    <p>What has 4 legs and can't walk? A table! But what if we could change that? Introducing the Walking Table, a functional piece of furniture that moves at your command. Need to grab your coffee mug that's all the way across the room, but don't have the energy to get up and retrieve it? No problem! Just grab the walking table remote and guide your new favorite table over to your side.</p>
-    <p>One problem here is that this has already been done (see picture). Which is fine, but I want to make some modifications, listed here:</p>
+  <h4><b>Idea 1: Walking Table</b></h4>
+  What has 4 legs and can't walk? A table! But what if we could change that? Introducing the Walking Table, a functional piece of furniture
+  that moves at your command. Need to grab your coffee mug that's all the way across the room, but don't have the energy to get up and
+  retrieve it? No problem! Just grab the walking table remote and guide your new favorite table over to your side.
+  <div class="flexrow">
+    <img src="./walking_table.jpg" alt="Walking Table" style="width:50%;" border="5px">
+    <img src="./walking_table_2.jpg" alt="Walking Table 2" style="width:43%;" border="5px">
+  </div>
+  <p class="margin"></p>
+  In addition to being a fun machine to play around with, the walking table can also be used functionally. The main use case I see is to help out
+  elderly/disabled people that have difficulty retrieving objects around the house. These people can use the table as an assistant to bring things
+  over to them. One thing to note here is that this has already been done (see picture). While I realize that it doesn't really matter if it's been done
+  already, I would like to make a project where I'm not just referencing somebody else's documentation the entire time. That being said, here are some
+  modifications I could make to the project in order to make it a little different:
+  <ul>
+    <li>Make it smaller, with fewer parts (fewer legs)</li>
+    <li>Add a height-adjustment capability</li>
+    <li>Make the tabletop a cool lacquer-wood inlaid kind of design</li>
+  </ul>
+  <p class="margin"></p>
+
+  <h4><b>Idea 2: Music Visualizer</b></h4>
+  Remember the scene in Jurassic Park where the T-Rex starts to stomp and the camera pans to the puddle on the ground?
+  Imagine being able to see this with your own eyes &mdash; except without a giant dinosaur chasing you! The idea here is to form a device that
+  visualizes music based on vibrations. Some particular ways to carry out this idea include:<p></p>
     <ul>
-      <li>Make it smaller, with fewer parts (fewer legs)</li>
-      <li>Add a height-adjustment capability</li>
-      <li>Make the tabletop a cool lacquer-wood inlaid kind of design</li>
+      <li>
+        Wall-Mounted Sonic Waterfall Ambient Light Source: As the name implies, here we have a wall-mounted, aesthetic, dynamic artwork that features a sheet of water
+        flowing down a plastic or glass (transparent) surface that is visible to the user. The water is lit up by a series of LEDs that (maybe) respond to
+        music. But the real cool part is the transducer behind the waterfall, which creates ripples corresponding to the music. The idea behind this
+        project is combining music visualization with a practical use, like a nightlight or just an ambient light source for various uses.
+        <div class="flexrow"><img src="./water_vibration.png" alt="Walking Table 2" style="width:50%;" border="5px"></div>
+      </li>
+      <p></p>
+      <li>
+        Ferrofluid Version: Instead of water, we use ferrofluid. Instead of a vibrating transducer, we use an electromagnet. The flow of energy would
+        follow as beginning at the speaker, then these vibrations would be captured by a microphone, which would convert the signals to an electric
+        current into the electromagnet, which would then effectively cause the ferrofluid to react to the music.
+        <div class="flexrow"><img src="./ferrofluid.png" alt="Ferrofluid" style="width:50%;" border="5px"></div>
+      </li>
     </ul>
-    <img src="../walking_table.jpg" alt="Walking Table" style="width:100%; max-width:300px; display:block; margin:auto;">
+  <p class="margin"></p>
+  <h4><b>Idea 3: CD Carousel</b></h4>
+  I just recently started a CD collection, and want to organize the CDs in an interesting kind of way. I want to make it at least a little dynamic and aesthetically
+  pleasing, with lights and movements. The design I came up with includes a multi-story rotating carousel that holds the CDs on the bottom shelves, and then
+  holds the CD player and speaker on the top shelf. To make it more interesting, I'll put a reactive RGB LED strip somewhere (maybe on the thin layer of
+  one of the rotating wheels) that reacts to sound. Additionally, the wheels will idly rotate (in opposite directions), with a motion sensor to allow the user to
+  stop the rotation of the wheel in order to select a record to play.
+  <p></p>
+  Rough details:
+  <ul>
+    <li>Material: <b>Wood</b> and <b>Brass</b> for a more warm aesthetic. Wood for the different layer bodies, and brass for the central axle and
+    maybe some furnishing / aesthetic placement.</li>
+    <li>A few servo motors to drive the wheel rotations.</li>
+    <li>A motion sensor on/off stop button to toggle wheel rotation functionality.</li>
+    <li>Wooden grooves in the wheels to hold the CD cases.</li>
+  </ul>
+  <p></p>
+  <div class="flexrow">
+    <img src="./servo.png" alt="servo" style="width:20%;" border="3px">
+    <img src="./motionsensor.png" alt="servo" style="width:20%;" border="3px">
+  </div>
+  <p></p>
+  Here is a rough sketch of what the CD Carousel would look like:
+  <div class="flexrow">
+    <img src="./cdsketch.png" alt="servo" style="width:75%;" border="8px">
   </div>
 
-  <div class="col-sm-4">
-    <h4>Idea 2: Cash Cow</h4>
-    <p>Have you ever wanted your own personal ATM? Look no further! For those of you out there who love organizing your personal belongings, but find that your wallet or purse can't hold the fat stacks of cash you bring back home every day, the Cash Cow is perfect for you. With this device, you can withdraw or deposit the desired amount of cash you want, whenever you want, and it will constantly keep track of how much money you have in the bank.</p>
-  </div>
-
-  <div class="col-sm-4">
-    <h4>Idea 3: Self-Watering Planter</h4>
-    <p>Watering plants can be hard to keep track of. Unfortunately, you can't use a sprinkler indoors, unless you want to get all your stuff wet! The self-watering planter solves this problem by constantly monitoring moisture levels in the soil, and whenever it gets too dry, activates a water pump to give the dry plant a nice shower!</p>
-  </div>
-</div>
-
-</div>
-</xmp>
+  <p></p>
+  Some challenges I might encounter in this project:
+  <ul>
+    <li>Ensuring the carousels can turn smoothly and quietly.</li>
+    <li>Seamless implementation of the motion sensor on/off switch, servo motors, and corresponding power source.</li>
+    <li>Securing CDs on the wheel to make sure they don't fall over when rotated.</li>
+  </ul>
+  </xmp>
 </body>
 
 <script src="../strapdown.js"></script>
