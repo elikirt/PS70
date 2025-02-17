@@ -123,14 +123,51 @@ code {
 
 .link-container a {
   display: inline-block;
-  transform: rotate(-15deg);
+  transform: rotate(-10deg);
   margin: 10px 0;
   position: relative;
   text-decoration: none;
-  transition: transform 0.3s, font-size 0.3s; /* Smooth transition */
+  transition: transform 0.3s, font-size 0.3s;
 }
 
 .link-container a:hover {
-  font-size: calc(100% + 15px); /* Increase font size by 5px */
-  transform: rotate(-10deg); /* Change angle on hover */
+  font-size: calc(100% + 15px);
+  transform: rotate(-10deg);
+}
+
+.hover_img a {
+  position: relative;
+  display: inline-block;
+}
+
+.hover_img a span {
+  position: absolute;
+  display: none;
+  z-index: 99;
+  top: 0%;
+  left: 100%;
+  transform: translate(500px, 30%);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.hover_img_raised a span {
+  position: absolute;
+  display: none;
+  z-index: 99;
+  top: 0%;
+  left: 100%;
+  transform: translate(500px, -40%);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.hover_img a span img,
+.hover_img_raised a span img {
+  transform: rotate(10deg);
+}
+
+.hover_img a:hover span,
+.hover_img_raised a:hover span {
+  display: block;
 }
